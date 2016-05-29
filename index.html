@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js consumer" lang="en">
+	<head>
+		<script src="config.js"></script>
+		<script src="https://connect.soundcloud.com/sdk/sdk-3.1.1.js"></script>
+		<script>
+			SC.initialize({
+				client_id: config.soundcloud.clientId
+
+			});
+		</script>
+	</head>
+
+	<body class="" id="grid">
+		<button id="start_button" onclick="startButton(event)">Start</button>
+		<button id="speak" onclick="speak()">Speak</button>
+
+		<script src="assets/javascripts/speech.js"></script>
+		<script src="assets/javascripts/commands.js"></script>
+		<script src="assets/javascripts/app.js"></script>
+	</body>
+</html>
